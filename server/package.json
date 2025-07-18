@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "image labeling tool backend",
+  "homepage": "https://github.com/giteshh/image-labeling-tool#readme",
+  "bugs": {
+    "url": "https://github.com/giteshh/image-labeling-tool/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giteshh/image-labeling-tool.git"
+  },
+  "license": "ISC",
+  "author": "Gitesh Sharma",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
