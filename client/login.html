@@ -71,7 +71,6 @@
             });
 
             const result = await res.json();
-            alert(result.message);
             if (res.status === 200) {
                 localStorage.setItem('user', JSON.stringify(result.user));
                 window.location.href = 'index.html';

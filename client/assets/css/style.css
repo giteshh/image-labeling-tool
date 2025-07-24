@@ -23,6 +23,28 @@
     height: 100px;
 }
 
+/* navbar */
+.navbar{
+    height: 80px;
+}
+
+.navbar-nav li {
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-toggle {
+    border: none;
+    background-color: transparent;
+}
+
+.profile-picture {
+    width: 30px;
+    height: 30px;
+}
+
 /*checkbox section*/
 .checkbox-container {
     display: flex;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,63 +10,77 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
+
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Image Labeling Tool</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Image Labeling Tool</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-<main>
-    <section>
-        <div class="container-fluid main-container">
-            <div class="items-container">
-                <!-- image section-->
-                <div class="image-section">
-                    <p>
-                        ONYX-0404-sensor2 2025-07-05 08:24:16 mid ch: 311 Elephant ONYX-0404_sensor2_20
-                    </p>
-                    <a href="assets/images/elephant-2.jpg" class="glightbox" data-gallery="onyx-gallery"
-                       data-zoomable="true" data-width="auto"
-                       data-height="auto">
-                        <img class="item-img" src="assets/images/elephant-2.jpg" alt="elephant">
-                    </a>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-center">
+                                <button class="dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/images/profile.png" class="profile-picture" alt="profile-picture">
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-lg-end">
+                                    <li><a class="dropdown-item" id="user-email" href="#"></a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="onLogout()">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+            </div>
+        </nav>
+    </header>
 
-                <!-- checkbox section-->
-                <div class="options-section">
-                    <div class="checkbox-container" id="checkboxContainer">
+    <main>
+        <section>
+            <div class="container-fluid main-container">
+                <div class="items-container">
+                    <!-- image section-->
+                    <div class="image-section">
+                        <p>
+                            ONYX-0404-sensor2 2025-07-05 08:24:16 mid ch: 311 Elephant ONYX-0404_sensor2_20
+                        </p>
+                        <a href="assets/images/elephant-2.jpg" class="glightbox" data-gallery="onyx-gallery"
+                            data-zoomable="true" data-width="auto" data-height="auto">
+                            <img class="item-img" src="assets/images/elephant-2.jpg" alt="elephant">
+                        </a>
+                    </div>
 
+                    <!-- checkbox section-->
+                    <div class="options-section">
+                        <div class="checkbox-container" id="checkboxContainer">
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
-<script src="assets/js/script.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<script>
-    const lightbox = GLightbox({
-        touchNavigation: true,
-        loop: true,
-        zoomable: true
-    });
-</script>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            zoomable: true
+        });
+    </script>
 
 </body>
+
 </html>
